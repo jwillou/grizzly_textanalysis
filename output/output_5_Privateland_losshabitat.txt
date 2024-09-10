@@ -1,0 +1,146 @@
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: land, protect, feder, develop, oil, gas, activ 
+ 	 FREX: feder, resourc, activ, natur, land, protect, gas 
+ 	 Lift: big, resourc, willcox, feder, natur, explor, activ 
+ 	 Score: big, land, feder, protect, explor, resourc, natur 
+Topic 2 Top Words:
+ 	 Highest Prob: bear, grizzli, land, wildlif, area, articl, privat 
+ 	 FREX: privat, wildlif, articl, conflict, public, quot, chang 
+ 	 Lift: associ, climat, requir, privat, conflict, loss, chang 
+ 	 Score: associ, public, wildlif, climat, land, privat, chang 
+Topic 3 Top Words:
+ 	 Highest Prob: bear, habitat, one, grizzli, can, say, popul 
+ 	 FREX: can, one, problem, biologist, realli, vehicl, say 
+ 	 Lift: problem, vehicl, can, realli, look, one, mortal 
+ 	 Score: problem, one, can, mortal, realli, vehicl, wilcox 
+Topic 4 Top Words:
+ 	 Highest Prob: grizzli, yellowston, road, bear, forest, nation, habitat 
+ 	 FREX: road, forest, nation, yellowston, servic, park, near 
+ 	 Lift: near, counti, nation, forest, road, yellowston, servic 
+ 	 Score: near, forest, road, yellowston, nation, park, log 
+Topic 5 Top Words:
+ 	 Highest Prob: bear, habitat, grizzli, develop, recoveri, remov, plan 
+ 	 FREX: much, remov, recoveri, list, threaten, rang, plan 
+ 	 Lift: critic, much, list, see, remov, recreat, rang 
+ 	 Score: critic, recoveri, much, remov, list, rang, habitat 
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+[1] "land protect feder develop oil gas activ"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.16877    0.04331   3.897 0.000165 ***
+levelFederal Judicial     0.04773    0.20352   0.235 0.814984    
+levelFederal Legislature  0.02945    0.19529   0.151 0.880380    
+levelIndegenous           0.27623    0.15226   1.814 0.072281 .  
+levelJournalist           0.15419    0.03400   4.535 1.43e-05 ***
+levelNGO                  0.14418    0.03051   4.725 6.61e-06 ***
+levelPublic               0.14796    0.07385   2.004 0.047478 *  
+levelState Executive      0.08481    0.07147   1.187 0.237811    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+[1] "bear grizzli land wildlif area articl privat"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.30488    0.04961   6.146 1.20e-08 ***
+levelFederal Judicial     0.02181    0.22841   0.095    0.924    
+levelFederal Legislature  0.04981    0.23935   0.208    0.836    
+levelIndegenous           0.14231    0.16229   0.877    0.382    
+levelJournalist           0.42111    0.03618  11.641  < 2e-16 ***
+levelNGO                  0.15942    0.03728   4.277 3.96e-05 ***
+levelPublic               0.06483    0.09027   0.718    0.474    
+levelState Executive      0.48272    0.07732   6.243 7.58e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+[1] "bear habitat one grizzli can say popul"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.154463   0.048317   3.197 0.001798 ** 
+levelFederal Judicial    0.009723   0.217160   0.045 0.964366    
+levelFederal Legislature 0.858590   0.218808   3.924 0.000149 ***
+levelIndegenous          0.034038   0.153651   0.222 0.825077    
+levelJournalist          0.095122   0.035210   2.702 0.007955 ** 
+levelNGO                 0.209189   0.035206   5.942 3.13e-08 ***
+levelPublic              0.378467   0.083480   4.534 1.44e-05 ***
+levelState Executive     0.284299   0.074558   3.813 0.000223 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+[1] "grizzli yellowston road bear forest nation habitat"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.08973    0.04544   1.975  0.05072 .  
+levelFederal Judicial     0.01960    0.20896   0.094  0.92545    
+levelFederal Legislature  0.02255    0.20284   0.111  0.91167    
+levelIndegenous           0.21472    0.13893   1.546  0.12500    
+levelJournalist           0.17815    0.03284   5.425 3.29e-07 ***
+levelNGO                  0.28422    0.03174   8.956 7.44e-15 ***
+levelPublic               0.24583    0.07829   3.140  0.00215 ** 
+levelState Executive      0.05482    0.06936   0.790  0.43094    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 122 documents and a 147 word dictionary.
+[1] "bear habitat grizzli develop recoveri remov plan"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.27823    0.03985   6.981 2.06e-10 ***
+levelFederal Judicial     0.89726    0.19164   4.682 7.89e-06 ***
+levelFederal Legislature  0.04861    0.19647   0.247   0.8050    
+levelIndegenous           0.34024    0.13062   2.605   0.0104 *  
+levelJournalist           0.14788    0.03281   4.507 1.60e-05 ***
+levelNGO                  0.20254    0.02845   7.120 1.03e-10 ***
+levelPublic               0.16356    0.07735   2.115   0.0366 *  
+levelState Executive      0.09124    0.06636   1.375   0.1718    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"

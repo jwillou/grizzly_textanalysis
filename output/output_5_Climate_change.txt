@@ -1,0 +1,146 @@
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: chang, climat, food, bear, sourc, yellowston, popul 
+ 	 FREX: new, delist, ecosystem, chang, now, genet, human 
+ 	 Lift: challeng, face, genet, delist, might, new, natur 
+ 	 Score: challeng, genet, chang, delist, face, now, might 
+Topic 2 Top Words:
+ 	 Highest Prob: pine, whitebark, grizzli, bear, sourc, food, yellowston 
+ 	 FREX: pine, whitebark, nut, beetl, tree, blister, sourc 
+ 	 Lift: make, beetl, blister, rust, nut, depend, rocki 
+ 	 Score: make, whitebark, pine, blister, tree, beetl, rust 
+Topic 3 Top Words:
+ 	 Highest Prob: speci, protect, feder, wildlif, climat, chang, one 
+ 	 FREX: feder, wildlif, protect, court, speci, includ, offici 
+ 	 Lift: conserv, feder, court, offici, wildlif, endang, list 
+ 	 Score: conserv, feder, wildlif, court, endang, list, protect 
+Topic 4 Top Words:
+ 	 Highest Prob: bear, grizzli, chang, climat, popul, increas, anim 
+ 	 FREX: anim, increas, hunt, also, surviv, plan, manag 
+ 	 Lift: affect, hunt, plan, surviv, anim, potenti, state 
+ 	 Score: affect, hunt, anim, potenti, need, state, surviv 
+Topic 5 Top Words:
+ 	 Highest Prob: trout, cutthroat, winter, grizzli, around, show, recent 
+ 	 FREX: trout, winter, cutthroat, show, park, sinc, nation 
+ 	 Lift: sinc, park, winter, trout, show, cutthroat, nation 
+ 	 Score: sinc, feed, winter, trout, cutthroat, park, show 
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+[1] "chang climat food bear sourc yellowston popul"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive  0.43945    0.06153   7.142 1.51e-10 ***
+levelFederal Judicial   0.15611    0.10928   1.428  0.15627    
+levelJournalist         0.20339    0.03316   6.133 1.73e-08 ***
+levelNGO                0.31985    0.05932   5.392 4.66e-07 ***
+levelPublic             0.26363    0.07071   3.728  0.00032 ***
+levelState Executive    0.30706    0.11872   2.586  0.01114 *  
+levelState Judicial     0.14751    0.23459   0.629  0.53091    
+levelState Legislature  0.03054    0.25743   0.119  0.90581    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+[1] "pine whitebark grizzli bear sourc food yellowston"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive  0.15349    0.06639   2.312  0.02283 *  
+levelFederal Judicial   0.24553    0.11554   2.125  0.03604 *  
+levelJournalist         0.30289    0.03829   7.911 3.53e-12 ***
+levelNGO                0.17973    0.05956   3.018  0.00323 ** 
+levelPublic             0.20667    0.07087   2.916  0.00438 ** 
+levelState Executive    0.05749    0.13662   0.421  0.67482    
+levelState Judicial     0.16130    0.27013   0.597  0.55178    
+levelState Legislature  0.62737    0.26238   2.391  0.01867 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+[1] "speci protect feder wildlif climat chang one"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive  0.07113    0.04477   1.589 0.115265    
+levelFederal Judicial   0.24270    0.07605   3.191 0.001893 ** 
+levelJournalist         0.15680    0.02423   6.471 3.64e-09 ***
+levelNGO                0.14445    0.03904   3.700 0.000352 ***
+levelPublic             0.11214    0.04776   2.348 0.020835 *  
+levelState Executive    0.05967    0.08934   0.668 0.505731    
+levelState Judicial     0.03605    0.17296   0.208 0.835320    
+levelState Legislature  0.01273    0.17516   0.073 0.942203    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+[1] "bear grizzli chang climat popul increas anim"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive 0.147623   0.065827   2.243 0.027130 *  
+levelFederal Judicial  0.027819   0.114413   0.243 0.808390    
+levelJournalist        0.277446   0.035120   7.900 3.73e-12 ***
+levelNGO               0.248263   0.055187   4.499 1.85e-05 ***
+levelPublic            0.240884   0.069631   3.459 0.000797 ***
+levelState Executive   0.557484   0.125900   4.428 2.43e-05 ***
+levelState Judicial    0.599554   0.253605   2.364 0.020005 *  
+levelState Legislature 0.008829   0.254750   0.035 0.972421    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 108 documents and a 130 word dictionary.
+[1] "trout cutthroat winter grizzli around show recent"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive  0.18375    0.04351   4.223 5.33e-05 ***
+levelFederal Judicial   0.32717    0.07909   4.137 7.35e-05 ***
+levelJournalist         0.06070    0.02564   2.367  0.01984 *  
+levelNGO                0.10924    0.03911   2.793  0.00625 ** 
+levelPublic             0.17068    0.05244   3.255  0.00155 ** 
+levelState Executive    0.01703    0.08506   0.200  0.84175    
+levelState Judicial     0.05833    0.18884   0.309  0.75807    
+levelState Legislature  0.31242    0.18371   1.701  0.09213 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"

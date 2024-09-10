@@ -1,0 +1,141 @@
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: bear, grizzli, state, idaho, montana, million, wyom 
+ 	 FREX: bear, idaho, state, grizzli, montana, wyom, million 
+ 	 Lift: idaho, montana, state, bear, grizzli, wyom, money 
+ 	 Score: idaho, montana, state, money, bear, grizzli, wyom 
+Topic 2 Top Words:
+ 	 Highest Prob: bear, manag, wildlif, grizzli, speci, yellowston, year 
+ 	 FREX: manag, bear, wildlif, grizzli, speci, wyom, yellowston 
+ 	 Lift: wildlif, manag, bear, grizzli, speci, yellowston, year 
+ 	 Score: wildlif, manag, bear, grizzli, speci, yellowston, montana 
+Topic 3 Top Words:
+ 	 Highest Prob: fund, grizzli, manag, bear, year, yellowston, wyom 
+ 	 FREX: fund, grizzli, manag, bear, wyom, recoveri, year 
+ 	 Lift: fund, grizzli, manag, bear, year, yellowston, wyom 
+ 	 Score: fund, manag, grizzli, bear, year, yellowston, montana 
+Topic 4 Top Words:
+ 	 Highest Prob: year, speci, spent, yellowston, money, recoveri, million 
+ 	 FREX: spent, year, yellowston, speci, money, recoveri, grizzli 
+ 	 Lift: spent, yellowston, year, speci, money, recoveri, million 
+ 	 Score: spent, money, speci, yellowston, year, recoveri, cost 
+Topic 5 Top Words:
+ 	 Highest Prob: million, grizzli, wyom, cost, recoveri, manag, bear 
+ 	 FREX: million, cost, wyom, grizzli, recoveri, manag, speci 
+ 	 Lift: cost, million, wyom, recoveri, grizzli, manag, speci 
+ 	 Score: cost, speci, million, wyom, recoveri, grizzli, manag 
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+[1] "bear grizzli state idaho montana million wyom"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.15020    0.04763   3.154  0.00278 ** 
+levelFederal Legislature  0.33823    0.04884   6.926 9.55e-09 ***
+levelIndegenous           0.04012    0.14819   0.271  0.78776    
+levelJournalist           0.48015    0.04927   9.746 5.84e-13 ***
+levelNGO                  0.41119    0.05095   8.070 1.73e-10 ***
+levelPublic               0.03373    0.10611   0.318  0.75196    
+levelState Executive      0.32045    0.04470   7.169 4.05e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+[1] "bear manag wildlif grizzli speci yellowston year"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.28395    0.01669  17.017  < 2e-16 ***
+levelFederal Legislature  0.01875    0.01700   1.103  0.27547    
+levelIndegenous           0.71508    0.04968  14.395  < 2e-16 ***
+levelJournalist           0.05464    0.01668   3.275  0.00196 ** 
+levelNGO                  0.22672    0.01700  13.337  < 2e-16 ***
+levelPublic               0.33298    0.03663   9.091 5.22e-12 ***
+levelState Executive      0.18039    0.01611  11.197 5.51e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+[1] "fund grizzli manag bear year yellowston wyom"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.15534    0.01562   9.944 3.04e-13 ***
+levelFederal Legislature  0.01122    0.01543   0.727   0.4707    
+levelIndegenous           0.11871    0.05063   2.345   0.0232 *  
+levelJournalist           0.01963    0.01466   1.339   0.1869    
+levelNGO                  0.11920    0.01568   7.604 8.79e-10 ***
+levelPublic               0.35955    0.03336  10.778 2.06e-14 ***
+levelState Executive      0.08661    0.01551   5.586 1.07e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+[1] "year speci spent yellowston money recoveri million"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.24497    0.02911   8.414 5.25e-11 ***
+levelFederal Legislature  0.47731    0.02948  16.188  < 2e-16 ***
+levelIndegenous           0.06111    0.09101   0.671 0.505151    
+levelJournalist           0.19528    0.02848   6.856 1.22e-08 ***
+levelNGO                  0.16879    0.02903   5.813 4.83e-07 ***
+levelPublic               0.24552    0.06320   3.885 0.000313 ***
+levelState Executive      0.03936    0.02754   1.429 0.159417    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 55 documents and a 17 word dictionary.
+[1] "million grizzli wyom cost recoveri manag bear"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.16292    0.01812   8.993 7.26e-12 ***
+levelFederal Legislature  0.15756    0.01769   8.908 9.69e-12 ***
+levelIndegenous           0.06260    0.05852   1.070 0.290162    
+levelJournalist           0.25251    0.01697  14.880  < 2e-16 ***
+levelNGO                  0.07430    0.01774   4.188 0.000119 ***
+levelPublic               0.03186    0.03732   0.854 0.397537    
+levelState Executive      0.37248    0.01707  21.815  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"

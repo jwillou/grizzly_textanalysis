@@ -1,0 +1,151 @@
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: state, back, pro, bear, say, support, yellowston 
+ 	 FREX: back, pro, state, bear, yellowston, support, protect 
+ 	 Lift: pro, back, state, bear, say, support, yellowston 
+ 	 Score: pro, back, state, peopl, delist, fish, hunt 
+Topic 2 Top Words:
+ 	 Highest Prob: speci, endang, protect, act, remov, list, support 
+ 	 FREX: endang, act, speci, remov, hunt, list, protect 
+ 	 Lift: hunt, act, endang, remov, speci, list, support 
+ 	 Score: hunt, act, feder, speci, endang, remov, protect 
+Topic 3 Top Words:
+ 	 Highest Prob: delist, feder, bear, manag, ecosystem, montana, northern 
+ 	 FREX: delist, feder, bear, montana, yellowston, ecosystem, manag 
+ 	 Lift: delist, feder, bear, manag, ecosystem, montana, northern 
+ 	 Score: delist, feder, bear, montana, ecosystem, manag, wildlif 
+Topic 4 Top Words:
+ 	 Highest Prob: grizzli, bear, popul, yellowston, wildlif, ecosystem, need 
+ 	 FREX: popul, wildlif, need, fish, grizzli, area, ecosystem 
+ 	 Lift: fish, need, wildlif, servic, popul, nation, area 
+ 	 Score: fish, wildlif, grizzli, popul, servic, nation, feder 
+Topic 5 Top Words:
+ 	 Highest Prob: manag, recoveri, bear, want, peopl, montana, say 
+ 	 FREX: manag, want, recoveri, peopl, say, bear, montana 
+ 	 Lift: want, say, peopl, manag, recoveri, montana, bear 
+ 	 Score: want, montana, peopl, recoveri, manag, say, grizzli 
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+[1] "state back pro bear say support yellowston"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.031395   0.007751   4.050 6.62e-05 ***
+levelFederal Judicial    0.036551   0.029472   1.240 0.215949    
+levelFederal Legislature 0.202176   0.008339  24.244  < 2e-16 ***
+levelIndegenous          0.031032   0.018004   1.724 0.085865 .  
+levelJournalist          0.055998   0.017057   3.283 0.001157 ** 
+levelNGO                 0.045628   0.006287   7.258 3.86e-12 ***
+levelPublic              0.007931   0.012982   0.611 0.541713    
+levelState Executive     0.110662   0.008373  13.217  < 2e-16 ***
+levelState Legislature   0.128008   0.033862   3.780 0.000191 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+[1] "speci endang protect act remov list support"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.28855    0.01563  18.459  < 2e-16 ***
+levelFederal Judicial     0.35241    0.05823   6.052 4.56e-09 ***
+levelFederal Legislature  0.14759    0.01644   8.976  < 2e-16 ***
+levelIndegenous           0.21735    0.03237   6.714 1.05e-10 ***
+levelJournalist           0.36017    0.03260  11.047  < 2e-16 ***
+levelNGO                  0.23205    0.01305  17.787  < 2e-16 ***
+levelPublic               0.20197    0.02638   7.657 3.09e-13 ***
+levelState Executive      0.18564    0.01532  12.118  < 2e-16 ***
+levelState Legislature    0.08964    0.06804   1.317    0.189    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+[1] "delist feder bear manag ecosystem montana northern"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.066422   0.006254  10.622  < 2e-16 ***
+levelFederal Judicial    0.091049   0.024679   3.689  0.00027 ***
+levelFederal Legislature 0.148348   0.007137  20.785  < 2e-16 ***
+levelIndegenous          0.199948   0.014260  14.021  < 2e-16 ***
+levelJournalist          0.083617   0.013180   6.344 8.91e-10 ***
+levelNGO                 0.074804   0.005260  14.222  < 2e-16 ***
+levelPublic              0.115035   0.010986  10.471  < 2e-16 ***
+levelState Executive     0.082816   0.006515  12.712  < 2e-16 ***
+levelState Legislature   0.438504   0.029281  14.976  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+[1] "grizzli bear popul yellowston wildlif ecosystem need"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive    0.40118    0.01381  29.052  < 2e-16 ***
+levelFederal Judicial     0.41362    0.05115   8.086 1.85e-14 ***
+levelFederal Legislature  0.27463    0.01521  18.054  < 2e-16 ***
+levelIndegenous           0.48466    0.03020  16.046  < 2e-16 ***
+levelJournalist           0.39999    0.02851  14.030  < 2e-16 ***
+levelNGO                  0.48414    0.01138  42.533  < 2e-16 ***
+levelPublic               0.47586    0.02219  21.447  < 2e-16 ***
+levelState Executive      0.42114    0.01368  30.776  < 2e-16 ***
+levelState Legislature    0.25766    0.06007   4.289 2.47e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 290 documents and a 32 word dictionary.
+[1] "manag recoveri bear want peopl montana say"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.213124   0.008658  24.615  < 2e-16 ***
+levelFederal Judicial    0.105061   0.033989   3.091  0.00219 ** 
+levelFederal Legislature 0.227154   0.009898  22.949  < 2e-16 ***
+levelIndegenous          0.068499   0.019481   3.516  0.00051 ***
+levelJournalist          0.101553   0.019043   5.333 1.99e-07 ***
+levelNGO                 0.163389   0.007365  22.184  < 2e-16 ***
+levelPublic              0.198588   0.014228  13.957  < 2e-16 ***
+levelState Executive     0.201513   0.008932  22.562  < 2e-16 ***
+levelState Legislature   0.084623   0.037911   2.232  0.02639 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"

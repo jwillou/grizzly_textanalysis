@@ -1,0 +1,151 @@
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: bear, grizzli, yellowston, tribal, feder, tribe, spiritu 
+ 	 FREX: bear, yellowston, grizzli, feder, tribal, tribe, nation 
+ 	 Lift: yellowston, bear, grizzli, feder, tribal, tribe, spiritu 
+ 	 Score: yellowston, bear, grizzli, tribal, tribe, feder, nation 
+Topic 2 Top Words:
+ 	 Highest Prob: tribal, grizzli, nation, protect, cultur, bear, tribe 
+ 	 FREX: tribal, nation, protect, grizzli, cultur, bear, feder 
+ 	 Lift: protect, nation, tribal, cultur, grizzli, bear, feder 
+ 	 Score: protect, nation, grizzli, tribal, cultur, bear, tribe 
+Topic 3 Top Words:
+ 	 Highest Prob: tribe, delist, state, feder, wildlif, tribal, grizzli 
+ 	 FREX: delist, state, tribe, wildlif, feder, tribal, nation 
+ 	 Lift: state, delist, wildlif, tribe, feder, tribal, nation 
+ 	 Score: state, delist, tribe, wildlif, feder, tribal, nation 
+Topic 4 Top Words:
+ 	 Highest Prob: speci, spiritu, hunt, bear, tribal, wildlif, feder 
+ 	 FREX: speci, spiritu, hunt, tribal, bear, cultur, feder 
+ 	 Lift: speci, spiritu, hunt, tribal, bear, wildlif, feder 
+ 	 Score: speci, spiritu, bear, hunt, tribal, wildlif, feder 
+Topic 5 Top Words:
+ 	 Highest Prob: hunt, sacr, trophi, cultur, spiritu, grizzli, feder 
+ 	 FREX: sacr, hunt, trophi, cultur, grizzli, spiritu, feder 
+ 	 Lift: trophi, sacr, hunt, cultur, spiritu, grizzli, feder 
+ 	 Score: trophi, hunt, sacr, cultur, spiritu, grizzli, protect 
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+[1] "bear grizzli yellowston tribal feder tribe spiritu"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.307498   0.016545  18.585  < 2e-16 ***
+levelFederal Judicial    0.350029   0.023994  14.588  < 2e-16 ***
+levelFederal Legislature 0.406716   0.023023  17.666  < 2e-16 ***
+levelIndegenous          0.330979   0.005984  55.314  < 2e-16 ***
+levelJournalist          0.376408   0.009695  38.823  < 2e-16 ***
+levelNGO                 0.354014   0.012770  27.723  < 2e-16 ***
+levelPublic              0.152783   0.028210   5.416 4.75e-07 ***
+levelState Executive     0.123147   0.025276   4.872 4.52e-06 ***
+levelState Legislature   0.151274   0.041351   3.658 0.000421 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+[1] "tribal grizzli nation protect cultur bear tribe"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.182566   0.020079   9.093 1.70e-14 ***
+levelFederal Judicial    0.070855   0.028525   2.484   0.0148 *  
+levelFederal Legislature 0.276661   0.027315  10.128  < 2e-16 ***
+levelIndegenous          0.271950   0.006474  42.004  < 2e-16 ***
+levelJournalist          0.179847   0.011152  16.127  < 2e-16 ***
+levelNGO                 0.334090   0.015945  20.953  < 2e-16 ***
+levelPublic              0.445635   0.034492  12.920  < 2e-16 ***
+levelState Executive     0.054394   0.027827   1.955   0.0536 .  
+levelState Legislature   0.245785   0.049996   4.916 3.79e-06 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+[1] "tribe delist state feder wildlif tribal grizzli"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.357723   0.025319  14.129  < 2e-16 ***
+levelFederal Judicial    0.444166   0.038107  11.656  < 2e-16 ***
+levelFederal Legislature 0.239394   0.037372   6.406 6.07e-09 ***
+levelIndegenous          0.245472   0.008989  27.307  < 2e-16 ***
+levelJournalist          0.281080   0.014209  19.781  < 2e-16 ***
+levelNGO                 0.118006   0.020263   5.824 8.17e-08 ***
+levelPublic              0.355290   0.045280   7.847 7.08e-12 ***
+levelState Executive     0.773021   0.037301  20.724  < 2e-16 ***
+levelState Legislature   0.496336   0.067820   7.318 8.76e-11 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+[1] "speci spiritu hunt bear tribal wildlif feder"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.101366   0.009869  10.271  < 2e-16 ***
+levelFederal Judicial    0.050465   0.013942   3.620  0.00048 ***
+levelFederal Legislature 0.037744   0.014060   2.684  0.00860 ** 
+levelIndegenous          0.061717   0.003361  18.363  < 2e-16 ***
+levelJournalist          0.055446   0.005425  10.220  < 2e-16 ***
+levelNGO                 0.093675   0.007741  12.102  < 2e-16 ***
+levelPublic              0.025715   0.016143   1.593  0.11456    
+levelState Executive     0.043077   0.013830   3.115  0.00245 ** 
+levelState Legislature   0.086024   0.024560   3.503  0.00071 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 102 documents and a 17 word dictionary.
+[1] "hunt sacr trophi cultur spiritu grizzli feder"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                         Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive   0.051692   0.013670   3.781 0.000275 ***
+levelFederal Judicial    0.086861   0.020466   4.244 5.19e-05 ***
+levelFederal Legislature 0.037923   0.020212   1.876 0.063754 .  
+levelIndegenous          0.089773   0.004789  18.746  < 2e-16 ***
+levelJournalist          0.108546   0.008006  13.558  < 2e-16 ***
+levelNGO                 0.098778   0.011065   8.927 3.81e-14 ***
+levelPublic              0.021082   0.022869   0.922 0.358986    
+levelState Executive     0.011221   0.019943   0.563 0.575034    
+levelState Legislature   0.019580   0.034242   0.572 0.568833    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"

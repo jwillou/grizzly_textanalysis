@@ -1,0 +1,136 @@
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: bear, grizzli, delist, northern, yellowston, ecosystem, connect 
+ 	 FREX: bear, delist, grizzli, northern, yellowston, ecosystem, connect 
+ 	 Lift: delist, northern, bear, grizzli, yellowston, ecosystem, connect 
+ 	 Score: delist, northern, grizzli, bear, yellowston, connect, genet 
+Topic 2 Top Words:
+ 	 Highest Prob: connect, ecosystem, yellowston, bear, grizzli, northern, delist 
+ 	 FREX: connect, ecosystem, yellowston, bear, northern, grizzli, delist 
+ 	 Lift: connect, ecosystem, yellowston, bear, grizzli, northern, delist 
+ 	 Score: connect, yellowston, ecosystem, delist, genet, isol, popul 
+Topic 3 Top Words:
+ 	 Highest Prob: genet, bear, grizzli, northern, ecosystem, yellowston, connect 
+ 	 FREX: genet, bear, northern, grizzli, ecosystem, yellowston, connect 
+ 	 Lift: genet, bear, grizzli, northern, ecosystem, yellowston, connect 
+ 	 Score: genet, grizzli, northern, connect, delist, isol, popul 
+Topic 4 Top Words:
+ 	 Highest Prob: grizzli, yellowston, isol, bear, ecosystem, northern, connect 
+ 	 FREX: grizzli, isol, yellowston, ecosystem, bear, northern, connect 
+ 	 Lift: isol, yellowston, grizzli, ecosystem, northern, bear, connect 
+ 	 Score: isol, yellowston, grizzli, ecosystem, northern, bear, connect 
+Topic 5 Top Words:
+ 	 Highest Prob: popul, bear, grizzli, northern, yellowston, ecosystem, connect 
+ 	 FREX: popul, bear, northern, grizzli, yellowston, ecosystem, connect 
+ 	 Lift: popul, bear, northern, grizzli, yellowston, ecosystem, connect 
+ 	 Score: popul, bear, northern, yellowston, grizzli, connect, delist 
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+[1] "bear grizzli delist northern yellowston ecosystem connect"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive 0.193009   0.008443  22.861  < 2e-16 ***
+levelFederal Judicial  0.526968   0.018365  28.694  < 2e-16 ***
+levelJournalist        0.039846   0.006044   6.592 6.96e-08 ***
+levelNGO               0.184593   0.009716  19.000  < 2e-16 ***
+levelPublic            0.315111   0.019161  16.445  < 2e-16 ***
+levelState Executive   0.416294   0.008922  46.657  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+[1] "connect ecosystem yellowston bear grizzli northern delist"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive 0.177215   0.003937  45.017  < 2e-16 ***
+levelFederal Judicial  0.021115   0.007551   2.797   0.0079 ** 
+levelJournalist        0.013377   0.002736   4.889 1.69e-05 ***
+levelNGO               0.152714   0.003672  41.589  < 2e-16 ***
+levelPublic            0.080196   0.008119   9.877 2.75e-12 ***
+levelState Executive   0.037174   0.003898   9.536 7.47e-12 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+[1] "genet bear grizzli northern ecosystem yellowston connect"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive 0.108128   0.008090  13.365 2.44e-16 ***
+levelFederal Judicial  0.167007   0.017341   9.631 5.65e-12 ***
+levelJournalist        0.126231   0.006068  20.804  < 2e-16 ***
+levelNGO               0.086838   0.008574  10.128 1.34e-12 ***
+levelPublic            0.202384   0.017364  11.656 1.95e-14 ***
+levelState Executive   0.119838   0.008471  14.147  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+[1] "grizzli yellowston isol bear ecosystem northern connect"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive  0.22477    0.01590  14.135  < 2e-16 ***
+levelFederal Judicial   0.05166    0.03590   1.439 0.157961    
+levelJournalist         0.52413    0.01208  43.400  < 2e-16 ***
+levelNGO                0.31849    0.01797  17.728  < 2e-16 ***
+levelPublic             0.14283    0.03456   4.132 0.000178 ***
+levelState Executive    0.13595    0.01743   7.801 1.47e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
+A topic model with 5 topics, 46 documents and a 10 word dictionary.
+[1] "popul bear grizzli northern yellowston ecosystem connect"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+levelFederal Executive 0.297470   0.005056   58.84   <2e-16 ***
+levelFederal Judicial  0.236304   0.010763   21.96   <2e-16 ***
+levelJournalist        0.295339   0.003583   82.42   <2e-16 ***
+levelNGO               0.256465   0.005060   50.69   <2e-16 ***
+levelPublic            0.261332   0.010562   24.74   <2e-16 ***
+levelState Executive   0.289409   0.005296   54.64   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+[1] "#########"
