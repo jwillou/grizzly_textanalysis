@@ -1,0 +1,275 @@
+A text corpus with 2833 documents, and an 6186 word dictionary.
+
+              Executive  Indegenous  Journalist    Judicial Legislature         NGO      Public 
+         27         488          72         360          30         162         323         107 
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+Topic 1 Top Words:
+ 	 Highest Prob: manag, state, delist, wyom, wildlif, recov, work 
+ 	 FREX: scienc, return, senat, legisl, follow, fulli, wyom 
+ 	 Lift: bureaucrat, jim, modern, r-idaho, r-wyo, science-bas, sens 
+ 	 Score: manag, scienc, state, dain, risch, pro, circular 
+Topic 2 Top Words:
+ 	 Highest Prob: popul, speci, yellowston, endang, wildlif, list, act 
+ 	 FREX: endang, list, threaten, popul, pine, scientist, whitebark 
+ 	 Lift: arbitrari, arcto, bark, cutthroat, decim, distinct, failur 
+ 	 Score: endang, popul, list, speci, pine, threaten, whitebark 
+Topic 3 Top Words:
+ 	 Highest Prob: hunt, protect, nation, feder, land, yellowston, habitat 
+ 	 FREX: trophi, wild, face, divers, attorney, extinct, question 
+ 	 Lift: belov, boundari, grand, sovereignti, strip, allianc, ancestr 
+ 	 Score: hunt, trophi, land, attorney, column, nation, sacr 
+Topic 4 Top Words:
+ 	 Highest Prob: peopl, conflict, human, kill, can, year, area 
+ 	 FREX: conflict, human, kill, mortal, think, lot, limit 
+ 	 Lift: can’t, contain, dog, eventu, folk, incid, injur 
+ 	 Score: conflict, kill, peopl, human, lot, mortal, death 
+Topic 5 Top Words:
+ 	 Highest Prob: delist, state, fish, feder, conserv, servic, plan 
+ 	 FREX: tribal, petit, review, fws, requir, process, draft 
+ 	 Lift: advis, agreement, ancestor, ash, assess, balanc, blackfeet 
+ 	 Score: tribe, tribal, canada, petit, delist, fws, review 
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+[1] "manag state delist wyom wildlif recov work"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+levelExecutive   0.150146   0.004237  35.439  < 2e-16 ***
+levelIndegenous  0.045067   0.012490   3.608 0.000314 ***
+levelJournalist  0.115150   0.004461  25.812  < 2e-16 ***
+levelJudicial    0.071360   0.014401   4.955 7.65e-07 ***
+levelLegislature 0.491522   0.005945  82.673  < 2e-16 ***
+levelNGO         0.124923   0.005343  23.381  < 2e-16 ***
+levelPublic      0.070509   0.009392   7.508 8.03e-14 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Call:
+estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 1:
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            7.858e-02  1.624e-02   4.839 1.37e-06 ***
+levelIndegenous        3.338e-02  8.854e-02   0.377  0.70615    
+levelJournalist       -2.825e-02  2.382e-02  -1.186  0.23569    
+levelJudicial         -1.864e-02  7.037e-02  -0.265  0.79117    
+levelLegislature       2.081e-01  4.505e-02   4.619 4.03e-06 ***
+levelNGO              -5.547e-04  2.698e-02  -0.021  0.98360    
+levelPublic           -3.318e-02  3.717e-02  -0.893  0.37208    
+date                   5.820e-06  1.258e-06   4.626 3.90e-06 ***
+levelIndegenous:date  -1.089e-05  6.623e-06  -1.645  0.10009    
+levelJournalist:date  -5.889e-07  1.862e-06  -0.316  0.75183    
+levelJudicial:date    -5.000e-06  5.318e-06  -0.940  0.34721    
+levelLegislature:date  8.755e-06  3.265e-06   2.681  0.00738 ** 
+levelNGO:date         -2.054e-06  2.098e-06  -0.979  0.32757    
+levelPublic:date      -3.665e-06  2.895e-06  -1.266  0.20572    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+[1] "popul speci yellowston endang wildlif list act"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+levelExecutive   0.197005   0.004936  39.909  < 2e-16 ***
+levelIndegenous  0.061960   0.013493   4.592 4.58e-06 ***
+levelJournalist  0.273935   0.005693  48.116  < 2e-16 ***
+levelJudicial    0.344712   0.018488  18.645  < 2e-16 ***
+levelLegislature 0.197880   0.007309  27.074  < 2e-16 ***
+levelNGO         0.143439   0.006045  23.729  < 2e-16 ***
+levelPublic      0.153658   0.011097  13.847  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Call:
+estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 2:
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            2.737e-01  1.854e-02  14.759  < 2e-16 ***
+levelIndegenous       -1.988e-01  9.637e-02  -2.063  0.03921 *  
+levelJournalist        8.476e-02  2.768e-02   3.062  0.00222 ** 
+levelJudicial          2.051e-01  8.798e-02   2.332  0.01980 *  
+levelLegislature      -1.139e-01  5.986e-02  -1.903  0.05718 .  
+levelNGO              -1.440e-01  3.167e-02  -4.548 5.64e-06 ***
+levelPublic           -1.534e-01  4.757e-02  -3.224  0.00128 ** 
+date                  -6.226e-06  1.482e-06  -4.202 2.73e-05 ***
+levelIndegenous:date   5.171e-06  7.229e-06   0.715  0.47447    
+levelJournalist:date  -5.908e-07  2.201e-06  -0.268  0.78843    
+levelJudicial:date    -4.176e-06  6.730e-06  -0.620  0.53499    
+levelLegislature:date  8.941e-06  4.291e-06   2.084  0.03726 *  
+levelNGO:date          7.314e-06  2.559e-06   2.858  0.00429 ** 
+levelPublic:date       8.859e-06  3.734e-06   2.373  0.01773 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+[1] "hunt protect nation feder land yellowston habitat"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+levelExecutive   0.093352   0.004290  21.759  < 2e-16 ***
+levelIndegenous  0.311621   0.011507  27.082  < 2e-16 ***
+levelJournalist  0.182226   0.004794  38.015  < 2e-16 ***
+levelJudicial    0.351975   0.014704  23.937  < 2e-16 ***
+levelLegislature 0.036818   0.006060   6.075  1.4e-09 ***
+levelNGO         0.357243   0.005393  66.248  < 2e-16 ***
+levelPublic      0.174917   0.009765  17.912  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Call:
+estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 3:
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            1.534e-01  1.758e-02   8.728  < 2e-16 ***
+levelIndegenous        1.015e-01  8.600e-02   1.180 0.238136    
+levelJournalist        9.185e-02  2.572e-02   3.571 0.000362 ***
+levelJudicial         -8.167e-02  7.534e-02  -1.084 0.278454    
+levelLegislature      -5.859e-02  4.916e-02  -1.192 0.233425    
+levelNGO               3.282e-01  2.718e-02  12.077  < 2e-16 ***
+levelPublic            6.572e-02  4.099e-02   1.604 0.108924    
+date                  -4.868e-06  1.371e-06  -3.551 0.000390 ***
+levelIndegenous:date   9.162e-06  6.443e-06   1.422 0.155126    
+levelJournalist:date  -2.122e-07  2.046e-06  -0.104 0.917394    
+levelJudicial:date     2.661e-05  5.731e-06   4.643  3.6e-06 ***
+levelLegislature:date  7.288e-07  3.558e-06   0.205 0.837700    
+levelNGO:date         -5.285e-06  2.155e-06  -2.452 0.014278 *  
+levelPublic:date       1.252e-06  3.195e-06   0.392 0.695274    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+[1] "peopl conflict human kill can year area"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+levelExecutive   0.359401   0.007383  48.680   <2e-16 ***
+levelIndegenous  0.219596   0.020215  10.863   <2e-16 ***
+levelJournalist  0.273229   0.008154  33.509   <2e-16 ***
+levelJudicial    0.068722   0.027560   2.494   0.0127 *  
+levelLegislature 0.120373   0.009597  12.543   <2e-16 ***
+levelNGO         0.263809   0.009348  28.220   <2e-16 ***
+levelPublic      0.504097   0.015633  32.245   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Call:
+estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 4:
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            3.536e-01  2.845e-02  12.428  < 2e-16 ***
+levelIndegenous       -2.503e-01  1.530e-01  -1.636  0.10199    
+levelJournalist       -1.083e-01  4.356e-02  -2.486  0.01298 *  
+levelJudicial         -1.552e-01  1.316e-01  -1.179  0.23837    
+levelLegislature      -1.654e-02  8.799e-02  -0.188  0.85093    
+levelNGO              -8.520e-02  4.609e-02  -1.848  0.06464 .  
+levelPublic            1.951e-01  6.574e-02   2.968  0.00302 ** 
+date                   5.227e-07  2.215e-06   0.236  0.81347    
+levelIndegenous:date   8.174e-06  1.152e-05   0.710  0.47806    
+levelJournalist:date   1.839e-06  3.364e-06   0.547  0.58460    
+levelJudicial:date    -1.075e-05  1.002e-05  -1.073  0.28347    
+levelLegislature:date -1.591e-05  6.293e-06  -2.528  0.01152 *  
+levelNGO:date         -9.621e-07  3.613e-06  -0.266  0.79001    
+levelPublic:date      -4.143e-06  5.142e-06  -0.806  0.42048    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+A topic model with 5 topics, 2832 documents and a 1268 word dictionary.
+[1] "delist state fish feder conserv servic plan"
+
+Call:
+estimateEffect(formula = c(i) ~ (level) - 1, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                 Estimate Std. Error t value Pr(>|t|)    
+levelExecutive   0.199161   0.004147   48.03   <2e-16 ***
+levelIndegenous  0.363083   0.011164   32.52   <2e-16 ***
+levelJournalist  0.154572   0.004870   31.74   <2e-16 ***
+levelJudicial    0.166681   0.015466   10.78   <2e-16 ***
+levelLegislature 0.153715   0.006385   24.07   <2e-16 ***
+levelNGO         0.111175   0.005416   20.53   <2e-16 ***
+levelPublic      0.097181   0.009428   10.31   <2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Call:
+estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+    metadata = output$meta, uncertainty = "None")
+
+
+Topic 5:
+
+Coefficients:
+                        Estimate Std. Error t value Pr(>|t|)    
+(Intercept)            1.407e-01  1.697e-02   8.291  < 2e-16 ***
+levelIndegenous        3.161e-01  9.131e-02   3.462 0.000545 ***
+levelJournalist       -4.233e-02  2.732e-02  -1.549 0.121452    
+levelJudicial          5.874e-02  7.083e-02   0.829 0.407045    
+levelLegislature      -2.218e-02  4.895e-02  -0.453 0.650570    
+levelNGO              -1.031e-01  2.779e-02  -3.711 0.000211 ***
+levelPublic           -7.293e-02  3.962e-02  -1.841 0.065735 .  
+date                   4.780e-06  1.342e-06   3.563 0.000373 ***
+levelIndegenous:date  -1.184e-05  6.849e-06  -1.729 0.083891 .  
+levelJournalist:date  -2.342e-07  2.133e-06  -0.110 0.912579    
+levelJudicial:date    -7.290e-06  5.330e-06  -1.368 0.171483    
+levelLegislature:date -2.275e-06  3.513e-06  -0.648 0.517214    
+levelNGO:date          1.249e-06  2.176e-06   0.574 0.565937    
+levelPublic:date      -2.462e-06  3.114e-06  -0.791 0.429206    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
