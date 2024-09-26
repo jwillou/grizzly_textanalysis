@@ -128,7 +128,7 @@ for(i in 1:5){
   segments(x0=-500,x1=17000,y0=ytops[i],y1=ytops[i])
   segments(x0=17000,x1=17000,y0=(ybottoms[i]),y1=ytops[i])
   
-  date.eff  = estimateEffect(c(i) ~ level*date, output.stm, metadata = output$meta, uncertainty = "None")
+  date.eff  = estimateEffect(c(i) ~ level*date-1-date, output.stm, metadata = output$meta, uncertainty = "None")
   print(summary(date.eff))
   treg = summary(date.eff)$tables[[1]]
   treg = as.data.frame(treg)
@@ -136,9 +136,9 @@ for(i in 1:5){
   for(r in 1:nrow(treg)){
     treg$cats[r] = strsplit(rownames(treg)[r], split="level")[[1]][2]
   }
-  eff = estimateEffect(i ~ level * date, stmobj = output.stm, metadata = output$meta, uncertainty = "None")
-  treg$cats[is.na(treg$cats)][2] = "Executive:date"
-  treg$cats[is.na(treg$cats)][1] = "Executive"
+  eff = estimateEffect(i ~ level*date-1-date, stmobj = output.stm, metadata = output$meta, uncertainty = "None")
+  #treg$cats[is.na(treg$cats)][2] = "Executive:date"
+  #treg$cats[is.na(treg$cats)][1] = "Executive"
   treg$upper = treg$Estimate + 1.96 * treg$`Std. Error`
   treg$lower = treg$Estimate - 1.96 * treg$`Std. Error`
   

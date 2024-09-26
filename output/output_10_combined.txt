@@ -40,19 +40,19 @@ Topic 1:
 
 Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
-levelExecutive   0.150146   0.004237  35.439  < 2e-16 ***
-levelIndegenous  0.045067   0.012490   3.608 0.000314 ***
-levelJournalist  0.115150   0.004461  25.812  < 2e-16 ***
-levelJudicial    0.071360   0.014401   4.955 7.65e-07 ***
-levelLegislature 0.491522   0.005945  82.673  < 2e-16 ***
-levelNGO         0.124923   0.005343  23.381  < 2e-16 ***
-levelPublic      0.070509   0.009392   7.508 8.03e-14 ***
+levelExecutive   0.150504   0.004293  35.055  < 2e-16 ***
+levelIndegenous  0.044700   0.011577   3.861 0.000115 ***
+levelJournalist  0.115668   0.004758  24.310  < 2e-16 ***
+levelJudicial    0.070881   0.014954   4.740 2.24e-06 ***
+levelLegislature 0.491415   0.006368  77.168  < 2e-16 ***
+levelNGO         0.124938   0.005327  23.452  < 2e-16 ***
+levelPublic      0.070967   0.010319   6.877 7.48e-12 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 Call:
-estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+estimateEffect(formula = c(i) ~ level * date - 1 - date, stmobj = output.stm, 
     metadata = output$meta, uncertainty = "None")
 
 
@@ -60,20 +60,20 @@ Topic 1:
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            7.858e-02  1.624e-02   4.839 1.37e-06 ***
-levelIndegenous        3.338e-02  8.854e-02   0.377  0.70615    
-levelJournalist       -2.825e-02  2.382e-02  -1.186  0.23569    
-levelJudicial         -1.864e-02  7.037e-02  -0.265  0.79117    
-levelLegislature       2.081e-01  4.505e-02   4.619 4.03e-06 ***
-levelNGO              -5.547e-04  2.698e-02  -0.021  0.98360    
-levelPublic           -3.318e-02  3.717e-02  -0.893  0.37208    
-date                   5.820e-06  1.258e-06   4.626 3.90e-06 ***
-levelIndegenous:date  -1.089e-05  6.623e-06  -1.645  0.10009    
-levelJournalist:date  -5.889e-07  1.862e-06  -0.316  0.75183    
-levelJudicial:date    -5.000e-06  5.318e-06  -0.940  0.34721    
-levelLegislature:date  8.755e-06  3.265e-06   2.681  0.00738 ** 
-levelNGO:date         -2.054e-06  2.098e-06  -0.979  0.32757    
-levelPublic:date      -3.665e-06  2.895e-06  -1.266  0.20572    
+levelExecutive         7.713e-02  1.682e-02   4.585 4.74e-06 ***
+levelIndegenous        1.161e-01  8.008e-02   1.450 0.147179    
+levelJournalist        5.370e-02  1.855e-02   2.895 0.003826 ** 
+levelJudicial          7.000e-02  7.495e-02   0.934 0.350402    
+levelLegislature       2.851e-01  4.438e-02   6.423 1.56e-10 ***
+levelNGO               7.861e-02  2.116e-02   3.715 0.000207 ***
+levelPublic            4.394e-02  3.439e-02   1.278 0.201442    
+levelExecutive:date    5.933e-06  1.313e-06   4.517 6.53e-06 ***
+levelIndegenous:date  -5.464e-06  6.133e-06  -0.891 0.373025    
+levelJournalist:date   4.974e-06  1.477e-06   3.367 0.000770 ***
+levelJudicial:date     1.425e-08  5.695e-06   0.003 0.998004    
+levelLegislature:date  1.467e-05  3.115e-06   4.707 2.63e-06 ***
+levelNGO:date          3.730e-06  1.660e-06   2.247 0.024732 *  
+levelPublic:date       2.122e-06  2.683e-06   0.791 0.429094    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -89,19 +89,19 @@ Topic 2:
 
 Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
-levelExecutive   0.197005   0.004936  39.909  < 2e-16 ***
-levelIndegenous  0.061960   0.013493   4.592 4.58e-06 ***
-levelJournalist  0.273935   0.005693  48.116  < 2e-16 ***
-levelJudicial    0.344712   0.018488  18.645  < 2e-16 ***
-levelLegislature 0.197880   0.007309  27.074  < 2e-16 ***
-levelNGO         0.143439   0.006045  23.729  < 2e-16 ***
-levelPublic      0.153658   0.011097  13.847  < 2e-16 ***
+levelExecutive   0.196723   0.004761  41.322  < 2e-16 ***
+levelIndegenous  0.061214   0.013843   4.422 1.02e-05 ***
+levelJournalist  0.273752   0.005837  46.898  < 2e-16 ***
+levelJudicial    0.344915   0.017994  19.168  < 2e-16 ***
+levelLegislature 0.197475   0.006844  28.854  < 2e-16 ***
+levelNGO         0.143087   0.006467  22.125  < 2e-16 ***
+levelPublic      0.152403   0.011355  13.421  < 2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 Call:
-estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+estimateEffect(formula = c(i) ~ level * date - 1 - date, stmobj = output.stm, 
     metadata = output$meta, uncertainty = "None")
 
 
@@ -109,20 +109,20 @@ Topic 2:
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            2.737e-01  1.854e-02  14.759  < 2e-16 ***
-levelIndegenous       -1.988e-01  9.637e-02  -2.063  0.03921 *  
-levelJournalist        8.476e-02  2.768e-02   3.062  0.00222 ** 
-levelJudicial          2.051e-01  8.798e-02   2.332  0.01980 *  
-levelLegislature      -1.139e-01  5.986e-02  -1.903  0.05718 .  
-levelNGO              -1.440e-01  3.167e-02  -4.548 5.64e-06 ***
-levelPublic           -1.534e-01  4.757e-02  -3.224  0.00128 ** 
-date                  -6.226e-06  1.482e-06  -4.202 2.73e-05 ***
-levelIndegenous:date   5.171e-06  7.229e-06   0.715  0.47447    
-levelJournalist:date  -5.908e-07  2.201e-06  -0.268  0.78843    
-levelJudicial:date    -4.176e-06  6.730e-06  -0.620  0.53499    
-levelLegislature:date  8.941e-06  4.291e-06   2.084  0.03726 *  
-levelNGO:date          7.314e-06  2.559e-06   2.858  0.00429 ** 
-levelPublic:date       8.859e-06  3.734e-06   2.373  0.01773 *  
+levelExecutive         2.744e-01  1.958e-02  14.011  < 2e-16 ***
+levelIndegenous        7.094e-02  1.012e-01   0.701 0.483596    
+levelJournalist        3.572e-01  2.388e-02  14.954  < 2e-16 ***
+levelJudicial          4.781e-01  9.197e-02   5.199 2.15e-07 ***
+levelLegislature       1.580e-01  5.494e-02   2.876 0.004056 ** 
+levelNGO               1.309e-01  2.510e-02   5.215 1.97e-07 ***
+levelPublic            1.245e-01  4.178e-02   2.980 0.002908 ** 
+levelExecutive:date   -6.290e-06  1.521e-06  -4.135 3.65e-05 ***
+levelIndegenous:date  -6.954e-07  7.566e-06  -0.092 0.926776    
+levelJournalist:date  -6.701e-06  1.863e-06  -3.597 0.000328 ***
+levelJudicial:date    -1.045e-05  6.927e-06  -1.509 0.131494    
+levelLegislature:date  2.854e-06  3.898e-06   0.732 0.464188    
+levelNGO:date          9.648e-07  1.988e-06   0.485 0.627442    
+levelPublic:date       2.249e-06  3.251e-06   0.692 0.489075    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -138,19 +138,19 @@ Topic 3:
 
 Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
-levelExecutive   0.093352   0.004290  21.759  < 2e-16 ***
-levelIndegenous  0.311621   0.011507  27.082  < 2e-16 ***
-levelJournalist  0.182226   0.004794  38.015  < 2e-16 ***
-levelJudicial    0.351975   0.014704  23.937  < 2e-16 ***
-levelLegislature 0.036818   0.006060   6.075  1.4e-09 ***
-levelNGO         0.357243   0.005393  66.248  < 2e-16 ***
-levelPublic      0.174917   0.009765  17.912  < 2e-16 ***
+levelExecutive   0.093459   0.004292  21.775  < 2e-16 ***
+levelIndegenous  0.311858   0.011939  26.121  < 2e-16 ***
+levelJournalist  0.182044   0.004863  37.433  < 2e-16 ***
+levelJudicial    0.351763   0.016046  21.922  < 2e-16 ***
+levelLegislature 0.036555   0.005899   6.196 6.62e-10 ***
+levelNGO         0.357170   0.005308  67.292  < 2e-16 ***
+levelPublic      0.174472   0.009472  18.420  < 2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 Call:
-estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+estimateEffect(formula = c(i) ~ level * date - 1 - date, stmobj = output.stm, 
     metadata = output$meta, uncertainty = "None")
 
 
@@ -158,20 +158,20 @@ Topic 3:
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            1.534e-01  1.758e-02   8.728  < 2e-16 ***
-levelIndegenous        1.015e-01  8.600e-02   1.180 0.238136    
-levelJournalist        9.185e-02  2.572e-02   3.571 0.000362 ***
-levelJudicial         -8.167e-02  7.534e-02  -1.084 0.278454    
-levelLegislature      -5.859e-02  4.916e-02  -1.192 0.233425    
-levelNGO               3.282e-01  2.718e-02  12.077  < 2e-16 ***
-levelPublic            6.572e-02  4.099e-02   1.604 0.108924    
-date                  -4.868e-06  1.371e-06  -3.551 0.000390 ***
-levelIndegenous:date   9.162e-06  6.443e-06   1.422 0.155126    
-levelJournalist:date  -2.122e-07  2.046e-06  -0.104 0.917394    
-levelJudicial:date     2.661e-05  5.731e-06   4.643  3.6e-06 ***
-levelLegislature:date  7.288e-07  3.558e-06   0.205 0.837700    
-levelNGO:date         -5.285e-06  2.155e-06  -2.452 0.014278 *  
-levelPublic:date       1.252e-06  3.195e-06   0.392 0.695274    
+levelExecutive         1.525e-01  1.631e-02   9.350  < 2e-16 ***
+levelIndegenous        2.471e-01  8.645e-02   2.859 0.004285 ** 
+levelJournalist        2.442e-01  1.743e-02  14.012  < 2e-16 ***
+levelJudicial          7.683e-02  7.157e-02   1.074 0.283127    
+levelLegislature       9.596e-02  4.771e-02   2.011 0.044383 *  
+levelNGO               4.820e-01  2.169e-02  22.226  < 2e-16 ***
+levelPublic            2.213e-01  3.610e-02   6.129 1.01e-09 ***
+levelExecutive:date   -4.811e-06  1.273e-06  -3.778 0.000161 ***
+levelIndegenous:date   4.873e-06  6.427e-06   0.758 0.448416    
+levelJournalist:date  -5.027e-06  1.354e-06  -3.714 0.000208 ***
+levelJudicial:date     2.140e-05  5.428e-06   3.943 8.25e-05 ***
+levelLegislature:date -4.217e-06  3.362e-06  -1.254 0.209907    
+levelNGO:date         -1.016e-05  1.703e-06  -5.968 2.71e-09 ***
+levelPublic:date      -3.848e-06  2.814e-06  -1.368 0.171536    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -187,19 +187,19 @@ Topic 4:
 
 Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
-levelExecutive   0.359401   0.007383  48.680   <2e-16 ***
-levelIndegenous  0.219596   0.020215  10.863   <2e-16 ***
-levelJournalist  0.273229   0.008154  33.509   <2e-16 ***
-levelJudicial    0.068722   0.027560   2.494   0.0127 *  
-levelLegislature 0.120373   0.009597  12.543   <2e-16 ***
-levelNGO         0.263809   0.009348  28.220   <2e-16 ***
-levelPublic      0.504097   0.015633  32.245   <2e-16 ***
+levelExecutive   0.359622   0.007268  49.480   <2e-16 ***
+levelIndegenous  0.219070   0.019618  11.167   <2e-16 ***
+levelJournalist  0.274400   0.008041  34.124   <2e-16 ***
+levelJudicial    0.066395   0.027252   2.436   0.0149 *  
+levelLegislature 0.120799   0.010838  11.146   <2e-16 ***
+levelNGO         0.263850   0.008994  29.337   <2e-16 ***
+levelPublic      0.504458   0.016087  31.358   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 Call:
-estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+estimateEffect(formula = c(i) ~ level * date - 1 - date, stmobj = output.stm, 
     metadata = output$meta, uncertainty = "None")
 
 
@@ -207,20 +207,20 @@ Topic 4:
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            3.536e-01  2.845e-02  12.428  < 2e-16 ***
-levelIndegenous       -2.503e-01  1.530e-01  -1.636  0.10199    
-levelJournalist       -1.083e-01  4.356e-02  -2.486  0.01298 *  
-levelJudicial         -1.552e-01  1.316e-01  -1.179  0.23837    
-levelLegislature      -1.654e-02  8.799e-02  -0.188  0.85093    
-levelNGO              -8.520e-02  4.609e-02  -1.848  0.06464 .  
-levelPublic            1.951e-01  6.574e-02   2.968  0.00302 ** 
-date                   5.227e-07  2.215e-06   0.236  0.81347    
-levelIndegenous:date   8.174e-06  1.152e-05   0.710  0.47806    
-levelJournalist:date   1.839e-06  3.364e-06   0.547  0.58460    
-levelJudicial:date    -1.075e-05  1.002e-05  -1.073  0.28347    
-levelLegislature:date -1.591e-05  6.293e-06  -2.528  0.01152 *  
-levelNGO:date         -9.621e-07  3.613e-06  -0.266  0.79001    
-levelPublic:date      -4.143e-06  5.142e-06  -0.806  0.42048    
+levelExecutive         3.540e-01  2.751e-02  12.870  < 2e-16 ***
+levelIndegenous        1.040e-01  1.420e-01   0.732  0.46409    
+levelJournalist        2.462e-01  3.219e-02   7.649 2.75e-14 ***
+levelJudicial          1.855e-01  1.304e-01   1.423  0.15493    
+levelLegislature       3.417e-01  7.912e-02   4.319 1.62e-05 ***
+levelNGO               2.720e-01  3.509e-02   7.753 1.24e-14 ***
+levelPublic            5.534e-01  6.015e-02   9.200  < 2e-16 ***
+levelExecutive:date    4.530e-07  2.175e-06   0.208  0.83506    
+levelIndegenous:date   8.742e-06  1.061e-05   0.824  0.40996    
+levelJournalist:date   2.225e-06  2.534e-06   0.878  0.37987    
+levelJudicial:date    -9.297e-06  9.872e-06  -0.942  0.34644    
+levelLegislature:date -1.578e-05  5.611e-06  -2.813  0.00494 ** 
+levelNGO:date         -7.130e-07  2.774e-06  -0.257  0.79718    
+levelPublic:date      -3.969e-06  4.637e-06  -0.856  0.39209    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
@@ -236,19 +236,19 @@ Topic 5:
 
 Coefficients:
                  Estimate Std. Error t value Pr(>|t|)    
-levelExecutive   0.199161   0.004147   48.03   <2e-16 ***
-levelIndegenous  0.363083   0.011164   32.52   <2e-16 ***
-levelJournalist  0.154572   0.004870   31.74   <2e-16 ***
-levelJudicial    0.166681   0.015466   10.78   <2e-16 ***
-levelLegislature 0.153715   0.006385   24.07   <2e-16 ***
-levelNGO         0.111175   0.005416   20.53   <2e-16 ***
-levelPublic      0.097181   0.009428   10.31   <2e-16 ***
+levelExecutive   0.199414   0.004195   47.54   <2e-16 ***
+levelIndegenous  0.362981   0.011530   31.48   <2e-16 ***
+levelJournalist  0.154698   0.004795   32.26   <2e-16 ***
+levelJudicial    0.166547   0.015600   10.68   <2e-16 ***
+levelLegislature 0.153591   0.006155   24.95   <2e-16 ***
+levelNGO         0.111282   0.005175   21.51   <2e-16 ***
+levelPublic      0.097210   0.009260   10.50   <2e-16 ***
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
 
 Call:
-estimateEffect(formula = c(i) ~ level * date, stmobj = output.stm, 
+estimateEffect(formula = c(i) ~ level * date - 1 - date, stmobj = output.stm, 
     metadata = output$meta, uncertainty = "None")
 
 
@@ -256,20 +256,20 @@ Topic 5:
 
 Coefficients:
                         Estimate Std. Error t value Pr(>|t|)    
-(Intercept)            1.407e-01  1.697e-02   8.291  < 2e-16 ***
-levelIndegenous        3.161e-01  9.131e-02   3.462 0.000545 ***
-levelJournalist       -4.233e-02  2.732e-02  -1.549 0.121452    
-levelJudicial          5.874e-02  7.083e-02   0.829 0.407045    
-levelLegislature      -2.218e-02  4.895e-02  -0.453 0.650570    
-levelNGO              -1.031e-01  2.779e-02  -3.711 0.000211 ***
-levelPublic           -7.293e-02  3.962e-02  -1.841 0.065735 .  
-date                   4.780e-06  1.342e-06   3.563 0.000373 ***
-levelIndegenous:date  -1.184e-05  6.849e-06  -1.729 0.083891 .  
-levelJournalist:date  -2.342e-07  2.133e-06  -0.110 0.912579    
-levelJudicial:date    -7.290e-06  5.330e-06  -1.368 0.171483    
-levelLegislature:date -2.275e-06  3.513e-06  -0.648 0.517214    
-levelNGO:date          1.249e-06  2.176e-06   0.574 0.565937    
-levelPublic:date      -2.462e-06  3.114e-06  -0.791 0.429206    
+levelExecutive         1.414e-01  1.805e-02   7.833 6.68e-15 ***
+levelIndegenous        4.631e-01  8.562e-02   5.409 6.85e-08 ***
+levelJournalist        9.849e-02  1.924e-02   5.119 3.27e-07 ***
+levelJudicial          1.983e-01  7.229e-02   2.744 0.006117 ** 
+levelLegislature       1.203e-01  4.760e-02   2.528 0.011532 *  
+levelNGO               3.859e-02  2.164e-02   1.783 0.074659 .  
+levelPublic            6.906e-02  3.747e-02   1.843 0.065455 .  
+levelExecutive:date    4.751e-06  1.432e-06   3.317 0.000920 ***
+levelIndegenous:date  -7.560e-06  6.512e-06  -1.161 0.245795    
+levelJournalist:date   4.510e-06  1.495e-06   3.017 0.002579 ** 
+levelJudicial:date    -2.471e-06  5.451e-06  -0.453 0.650313    
+levelLegislature:date  2.365e-06  3.384e-06   0.699 0.484744    
+levelNGO:date          5.932e-06  1.682e-06   3.527 0.000428 ***
+levelPublic:date       2.302e-06  2.863e-06   0.804 0.421402    
 ---
 Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
 
